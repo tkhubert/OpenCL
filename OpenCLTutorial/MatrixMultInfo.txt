@@ -1,0 +1,69 @@
+
+Using OpenCL device: Iris
+
+===== Sequential, matrix mult (dot prod), order 1024 on host CPU ======
+ 6.22 seconds at 345.2 MFLOPS 
+ 6.92 seconds at 310.4 MFLOPS 
+ 6.56 seconds at 327.1 MFLOPS 
+ 5.61 seconds at 383.1 MFLOPS 
+ 5.56 seconds at 386.4 MFLOPS 
+
+===== OpenCL, matrix mult, C(i,j) per work item, order 1024 ======
+ 1.75 seconds at 1225.7 MFLOPS 
+ 1.92 seconds at 1118.5 MFLOPS 
+ 1.25 seconds at 1722.1 MFLOPS 
+ 1.55 seconds at 1387.3 MFLOPS 
+ 1.67 seconds at 1285.9 MFLOPS 
+
+===== OpenCL, matrix mult, C row per work item, order 1024 ======
+ 1.26 seconds at 1711.1 MFLOPS 
+ 1.04 seconds at 2062.9 MFLOPS 
+ 0.95 seconds at 2272.5 MFLOPS 
+ 0.98 seconds at 2202.5 MFLOPS 
+ 1.12 seconds at 1919.1 MFLOPS 
+
+===== OpenCL, matrix mult, C row, A row in priv mem, order 1024 ======
+ 0.75 seconds at 2878.7 MFLOPS 
+ 0.77 seconds at 2807.2 MFLOPS 
+ 0.74 seconds at 2894.2 MFLOPS 
+ 0.75 seconds at 2874.8 MFLOPS 
+ 0.85 seconds at 2514.6 MFLOPS 
+
+===== OpenCL, mat mult, C row, priv A, B cols loc, order 1024 ======
+ 1.53 seconds at 1401.8 MFLOPS 
+ 1.59 seconds at 1350.6 MFLOPS 
+ 1.57 seconds at 1368.7 MFLOPS 
+ 1.52 seconds at 1410.0 MFLOPS 
+ 1.34 seconds at 1606.2 MFLOPS 
+
+===== Parallel matrix mult (blocked), order 1024 on device ======
+ 0.08 seconds at 26843.5 MFLOPS 
+ 0.06 seconds at 33554.4 MFLOPS 
+ 0.06 seconds at 34087.0 MFLOPS 
+ 0.06 seconds at 33554.4 MFLOPS 
+ 0.06 seconds at 34087.0 MFLOPS 
+Program ended with exit code: 0
+
+
+Using OpenCL device: Intel(R) Core(TM) i5-4258U CPU @ 2.40GHz
+
+===== Sequential, matrix mult (dot prod), order 1024 on host CPU ======
+ 5.77 seconds at 372.2 MFLOPS 
+ 6.25 seconds at 343.3 MFLOPS 
+ 6.50 seconds at 330.6 MFLOPS 
+ 6.70 seconds at 320.7 MFLOPS 
+ 7.58 seconds at 283.2 MFLOPS 
+
+===== OpenCL, matrix mult, C(i,j) per work item, order 1024 ======
+ 2.97 seconds at 723.1 MFLOPS 
+ 2.96 seconds at 724.5 MFLOPS 
+ 3.09 seconds at 694.5 MFLOPS 
+ 3.02 seconds at 711.6 MFLOPS 
+ 3.20 seconds at 670.5 MFLOPS 
+
+===== OpenCL, matrix mult, C row per work item, order 1024 ======
+ 2.19 seconds at 980.6 MFLOPS 
+ 1.89 seconds at 1135.6 MFLOPS 
+ 2.73 seconds at 785.2 MFLOPS 
+ 1.81 seconds at 1187.8 MFLOPS 
+ 1.99 seconds at 1079.7 MFLOPS 

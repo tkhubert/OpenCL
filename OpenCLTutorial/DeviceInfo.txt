@@ -1,0 +1,32 @@
+
+Number of OpenCL plaforms: 1
+
+-------------------------
+Platform: Apple
+	Vendor:  Apple
+	Version: OpenCL 1.2 (Dec 14 2014 22:29:47)
+
+	Number of devices: 2
+	-------------------------
+		Name: Intel(R) Core(TM) i5-4258U CPU @ 2.40GHz
+		Version: OpenCL C 1.2 
+		Max. Compute Units: 4
+		Local Memory Size: 32 KB
+		Global Memory Size: 8192 MB
+		Max Alloc Size: 2048 MB
+		Max Work-group Total Size: 1024
+		Max Work-group Dims: (1024 1 1 )
+	-------------------------
+	-------------------------
+		Name: Iris
+		Version: OpenCL C 1.2 
+		Max. Compute Units: 40
+		Local Memory Size: 64 KB
+		Global Memory Size: 1536 MB
+		Max Alloc Size: 384 MB
+		Max Work-group Total Size: 512
+		Max Work-group Dims: (512 512 512 )
+	-------------------------
+
+-------------------------
+Program ended with exit code: 0

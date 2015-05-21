@@ -81,6 +81,7 @@
 		80341FFC1ACC7639004DCFFB /* OpenCLTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				8034200F1ACC7AF4004DCFFB /* OpenCLH */,
 				803420401ACD9E63004DCFFB /* matmul.cpp */,
 				803420411ACD9E63004DCFFB /* matmul.hpp */,
 				803420421ACD9E63004DCFFB /* matrix_lib.cpp */,
@@ -90,7 +91,6 @@
 				803420461ACD9E63004DCFFB /* mmult2.cl */,
 				803420471ACD9E63004DCFFB /* mmult3.cl */,
 				8034204E1ACDA0AF004DCFFB /* mmult4.cl */,
-				8034200F1ACC7AF4004DCFFB /* OpenCLH */,
 			);
 			path = OpenCLTutorial;
 			sourceTree = "<group>";
