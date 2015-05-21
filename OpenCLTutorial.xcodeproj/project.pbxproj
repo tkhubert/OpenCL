@@ -7,7 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		80341FFE1ACC7639004DCFFB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80341FFD1ACC7639004DCFFB /* main.cpp */; };
+		803420151ACC7AF4004DCFFB /* wtime.c in Sources */ = {isa = PBXBuildFile; fileRef = 803420141ACC7AF4004DCFFB /* wtime.c */; };
+		803420171ACC7B4A004DCFFB /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 803420161ACC7B4A004DCFFB /* OpenCL.framework */; };
+		803420481ACD9E63004DCFFB /* matmul.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 803420401ACD9E63004DCFFB /* matmul.cpp */; };
+		803420491ACD9E63004DCFFB /* matrix_lib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 803420421ACD9E63004DCFFB /* matrix_lib.cpp */; };
+		8034204A1ACD9E63004DCFFB /* mmult0.cl in Sources */ = {isa = PBXBuildFile; fileRef = 803420441ACD9E63004DCFFB /* mmult0.cl */; };
+		8034204B1ACD9E63004DCFFB /* mmult1.cl in Sources */ = {isa = PBXBuildFile; fileRef = 803420451ACD9E63004DCFFB /* mmult1.cl */; };
+		8034204C1ACD9E63004DCFFB /* mmult2.cl in Sources */ = {isa = PBXBuildFile; fileRef = 803420461ACD9E63004DCFFB /* mmult2.cl */; };
+		8034204D1ACD9E63004DCFFB /* mmult3.cl in Sources */ = {isa = PBXBuildFile; fileRef = 803420471ACD9E63004DCFFB /* mmult3.cl */; };
+		8034204F1ACDA0AF004DCFFB /* mmult4.cl in Sources */ = {isa = PBXBuildFile; fileRef = 8034204E1ACDA0AF004DCFFB /* mmult4.cl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +32,21 @@
 
 /* Begin PBXFileReference section */
 		80341FFA1ACC7639004DCFFB /* OpenCLTutorial */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenCLTutorial; sourceTree = BUILT_PRODUCTS_DIR; };
-		80341FFD1ACC7639004DCFFB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		803420101ACC7AF4004DCFFB /* cl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cl.hpp; sourceTree = "<group>"; };
+		803420111ACC7AF4004DCFFB /* device_picker.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = device_picker.hpp; sourceTree = "<group>"; };
+		803420121ACC7AF4004DCFFB /* err_code.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = err_code.h; sourceTree = "<group>"; };
+		803420131ACC7AF4004DCFFB /* util.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = util.hpp; sourceTree = "<group>"; };
+		803420141ACC7AF4004DCFFB /* wtime.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wtime.c; sourceTree = "<group>"; };
+		803420161ACC7B4A004DCFFB /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = System/Library/Frameworks/OpenCL.framework; sourceTree = SDKROOT; };
+		803420401ACD9E63004DCFFB /* matmul.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = matmul.cpp; sourceTree = "<group>"; };
+		803420411ACD9E63004DCFFB /* matmul.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matmul.hpp; sourceTree = "<group>"; };
+		803420421ACD9E63004DCFFB /* matrix_lib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = matrix_lib.cpp; sourceTree = "<group>"; };
+		803420431ACD9E63004DCFFB /* matrix_lib.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_lib.hpp; sourceTree = "<group>"; };
+		803420441ACD9E63004DCFFB /* mmult0.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = mmult0.cl; sourceTree = "<group>"; };
+		803420451ACD9E63004DCFFB /* mmult1.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = mmult1.cl; sourceTree = "<group>"; };
+		803420461ACD9E63004DCFFB /* mmult2.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = mmult2.cl; sourceTree = "<group>"; };
+		803420471ACD9E63004DCFFB /* mmult3.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = mmult3.cl; sourceTree = "<group>"; };
+		8034204E1ACDA0AF004DCFFB /* mmult4.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = mmult4.cl; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				803420171ACC7B4A004DCFFB /* OpenCL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +64,7 @@
 		80341FF11ACC7639004DCFFB = {
 			isa = PBXGroup;
 			children = (
+				803420161ACC7B4A004DCFFB /* OpenCL.framework */,
 				80341FFC1ACC7639004DCFFB /* OpenCLTutorial */,
 				80341FFB1ACC7639004DCFFB /* Products */,
 			);
@@ -57,9 +81,30 @@
 		80341FFC1ACC7639004DCFFB /* OpenCLTutorial */ = {
 			isa = PBXGroup;
 			children = (
-				80341FFD1ACC7639004DCFFB /* main.cpp */,
+				803420401ACD9E63004DCFFB /* matmul.cpp */,
+				803420411ACD9E63004DCFFB /* matmul.hpp */,
+				803420421ACD9E63004DCFFB /* matrix_lib.cpp */,
+				803420431ACD9E63004DCFFB /* matrix_lib.hpp */,
+				803420441ACD9E63004DCFFB /* mmult0.cl */,
+				803420451ACD9E63004DCFFB /* mmult1.cl */,
+				803420461ACD9E63004DCFFB /* mmult2.cl */,
+				803420471ACD9E63004DCFFB /* mmult3.cl */,
+				8034204E1ACDA0AF004DCFFB /* mmult4.cl */,
+				8034200F1ACC7AF4004DCFFB /* OpenCLH */,
 			);
 			path = OpenCLTutorial;
+			sourceTree = "<group>";
+		};
+		8034200F1ACC7AF4004DCFFB /* OpenCLH */ = {
+			isa = PBXGroup;
+			children = (
+				803420101ACC7AF4004DCFFB /* cl.hpp */,
+				803420111ACC7AF4004DCFFB /* device_picker.hpp */,
+				803420121ACC7AF4004DCFFB /* err_code.h */,
+				803420131ACC7AF4004DCFFB /* util.hpp */,
+				803420141ACC7AF4004DCFFB /* wtime.c */,
+			);
+			path = OpenCLH;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +163,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80341FFE1ACC7639004DCFFB /* main.cpp in Sources */,
+				8034204D1ACD9E63004DCFFB /* mmult3.cl in Sources */,
+				8034204F1ACDA0AF004DCFFB /* mmult4.cl in Sources */,
+				8034204B1ACD9E63004DCFFB /* mmult1.cl in Sources */,
+				803420491ACD9E63004DCFFB /* matrix_lib.cpp in Sources */,
+				8034204A1ACD9E63004DCFFB /* mmult0.cl in Sources */,
+				803420151ACC7AF4004DCFFB /* wtime.c in Sources */,
+				803420481ACD9E63004DCFFB /* matmul.cpp in Sources */,
+				8034204C1ACD9E63004DCFFB /* mmult2.cl in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +284,7 @@
 				803420031ACC7639004DCFFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
